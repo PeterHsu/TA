@@ -8,12 +8,8 @@
 <script src="/vendors/angular-route.min.js"></script>
 <script src="/vendors/angular-resource.min.js"></script>
 <script src="/app.js"></script>
-<script src="/javascripts/controllers/stockController.js"></script>
-<script src="/javascripts/services/stockService.js"></script>
 </head>
-<body ng-controller='StockController as stock'>
-  <ul ng-repeat="stock in stocks">
-    <li>{{stock.Name}}</li>
-  </ul>
+<body>
+  <pt-stock></pt-stock>
 </body>
 </html>
