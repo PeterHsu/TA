@@ -1,4 +1,4 @@
 angular.module('TA')
-.controller('StockController',function(){
-  this.name='Peter';
+.controller('StockController',function($scope,Stock){
+  $scope.stocks = Stock.query();
 });
