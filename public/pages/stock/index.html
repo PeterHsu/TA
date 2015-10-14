@@ -1,0 +1,15 @@
+<ul ng-repeat="stock in stocks">
+  <li>{{stock.Name}}</li>
+</ul>
+<div class="form-group">
+  <label for="id">_id:</label>
+  <input type="text" id="id" class="form-control" ng-model="stock._id"/>
+</div>
+<div class="form-group">
+  <label for="name">Name:</label>
+  <input type="text" id="name" class="form-control" ng-model="stock.Name"/>
+</div>
+<button id="btnGet" class="btn btn-primary" ng-click="get(stock)">Get</button>
+<button id="btnSave" class="btn btn-primary" ng-click="save(stock)">Save</button>
+<button id="btnDelete" class="btn btn-primary" ng-click="delete(stock)">Delete</button>
+<button id="btnUpdate" class="btn btn-primary" ng-click="update(stock)">Update</button>
